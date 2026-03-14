@@ -1,0 +1,39 @@
+:root {
+    --body-bg: #fcf4e5;
+    --primary-theme-color: #f5e067;
+    --secondary-theme-color: #614aa9;
+    --text-white: #fff;
+    --text-black: #000;
+    --card-bg: #faedd8;
+    --card-border: #c4bfb2;
+}
+
+
+
+
+/* Width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:var(--primary-theme-color);
+  border-radius: 10px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-theme-color);
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg-body) !important;
+	color: var(--text-black);
+}

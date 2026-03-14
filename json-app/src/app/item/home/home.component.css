@@ -1,0 +1,65 @@
+
+.ratings i {
+    font-size: 16px;
+    color: red
+}
+
+.strike-text {
+    color: red;
+    text-decoration: line-through
+}
+
+.product-image {
+        width: 70px;
+}
+
+.spec-1 {
+    color: #938787;
+    font-size: 15px
+}
+
+h5 {
+    font-weight: 400
+}
+
+.list-header h5{
+font-weight: bold;
+}
+.list-header{
+    background-color: #f8f6f6;
+}
+.para {
+    font-size: 16px
+}
+.primary-btn{
+      background: #614aa9;
+    color: #fff;
+    padding: 10px 16px;
+
+}
+.primary-btn-outline{
+    border: 1px solid #614aa9;
+    color: #614aa9;
+}
+.input-box{
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 22px;
+      border: 1px solid #f5f1f1;
+    border-radius: 8px;
+    }
+    .card-body{
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        /* padding: 22px; */
+        border: 1px solid #f5f1f1;
+        border-radius: 8px;
+    }
+    .card-inner{
+        border-bottom:1px solid #ede9e9 ;
+    }
+    .page-item.active .page-link {
+    background-color: #614aa9;
+    border-color: #614aa9;
+}
+.page-link {
+    color: #614aa9;
+}

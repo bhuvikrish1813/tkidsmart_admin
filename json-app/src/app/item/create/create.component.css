@@ -1,0 +1,62 @@
+.card-body {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #f5f1f1;
+  border-radius: 8px;
+}
+.primary-btn {
+  background: #614aa9;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+}
+.primary-btn-outline {
+  border: 1px solid #614aa9;
+  color: #614aa9;
+  background: #fff;
+}
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+.image-preview-box {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.image-preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.image-remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background: #614aa9;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.24);
+}
+.image-remove-btn:hover {
+  background: #492f83;
+}

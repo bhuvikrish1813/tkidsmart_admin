@@ -1,0 +1,65 @@
+<div class="container mt-5">
+  <div class="card p-4 card-body">
+    <div class="row mb-3">
+      <div class="col-md-9">
+        <h2>Edit Product</h2>
+        <p>Update product details and images.</p>
+      </div>
+      <div class="col-md-3 text-end">
+        <button class="btn primary-btn" routerLink="/">Back to List</button>
+      </div>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" [(ngModel)]="item.name" name="name" placeholder="Name" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Price</label>
+          <input type="number" class="form-control" [(ngModel)]="item.price" name="price" placeholder="Price" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Category</label>
+          <input type="text" class="form-control" [(ngModel)]="item.category" name="category" placeholder="Category" />
+        </div>
+        <div class="col-md-3 mb-3">
+          <label class="form-label">Qty</label>
+          <input type="number" class="form-control" [(ngModel)]="item.qty" name="qty" placeholder="Qty" />
+        </div>
+        <div class="col-md-3 mb-3">
+          <label class="form-label">Stock</label>
+          <input type="number" class="form-control" [(ngModel)]="item.stock" name="stock" placeholder="Stock" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Product Images (multiple)</label>
+          <input type="file" multiple accept="image/*" class="form-control" (change)="onImagesChange($event)" />
+          <div class="mt-2 d-flex flex-wrap gap-2" *ngIf="item.images?.length">
+            <div class="image-preview-box position-relative" *ngFor="let img of item.images; let i = index">
+              <button type="button" class="image-remove-btn" (click)="removeImage(i)">✕</button>
+              <img [src]="img" alt="Product" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Cover Image</label>
+          <input type="file" accept="image/*" class="form-control" (change)="onCoverImageChange($event)" />
+          <div *ngIf="item.coverImage" class="mt-2">
+            <div class="image-preview-box position-relative">
+              <button type="button" class="image-remove-btn" (click)="item.coverImage = ''">✕</button>
+              <img [src]="item.coverImage" alt="Cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex gap-2 mt-2">
+        <button type="button" (click)="update()" class="btn primary-btn">Update</button>
+        <button type="button" (click)="cancel()" class="btn primary-btn-outline">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
